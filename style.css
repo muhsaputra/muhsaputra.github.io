@@ -1,0 +1,145 @@
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+/* ANDROID VERSION */
+.navbar {
+  position: relative;
+
+  z-index: 1;
+}
+body {
+  font-family: poppins;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron {
+  background-image: url(img/background1.jpg);
+  background-size: cover;
+  height: 692px;
+  position: relative;
+}
+
+.jumbotron .display-4 {
+  color: white;
+  text-align: center;
+  margin-top: 300px;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron p {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.container h2 {
+  margin-top: 70px;
+  font-weight: bold;
+  color: #2d576d;
+  font-size: 48px;
+}
+
+.workingspace img {
+  margin-top: 113px;
+  border-radius: 22px;
+}
+
+.workingspace h3 {
+  margin-top: 115px;
+  font-size: 48px;
+  text-transform: lowercase;
+  text-align: center;
+  color: #2d576d;
+  font-weight: 300;
+}
+
+.workingspace p {
+  margin-top: 38px;
+  text-align: center;
+  font-weight: 400;
+  color: #2d576d;
+  text-transform: lowercase;
+}
+
+span {
+  font-weight: bold;
+}
+
+/* gallery */
+#projects {
+  margin-top: 113px;
+  background-image: url(img/background2.jpg);
+  height: 1900px;
+  background-size: cover;
+  position: relative;
+}
+
+#projects h2 {
+  color: white;
+}
+
+footer {
+  background-color: #2d576d;
+  margin-top: 299px;
+  height: 65px;
+}
+
+footer p {
+  padding-top: 2rem;
+}
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+  .jumbotron {
+    margin-top: -70px;
+    height: 792px;
+  }
+
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 62px;
+  }
+
+  .workingspace h3 {
+    text-align: left;
+  }
+
+  #projects {
+    height: 720px;
+  }
+  footer {
+    margin-top: 299px;
+    height: 65px;
+  }
+
+  .navbar {
+    position: fixed;
+    z-index: 1;
+  }
+}
